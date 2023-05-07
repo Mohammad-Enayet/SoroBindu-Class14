@@ -1,0 +1,314 @@
+/* --------------- UniverSal Selector CSS Started From Here --------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+.full-website{
+    width: 100%;
+    background-color: rebeccapurple;
+    margin: auto;
+}
+.mid-content{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.text-center{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+
+/* --------------- Header Section CSS Start --------------- */
+.header{
+    background-color: #fff;
+}
+
+.primary-menu{
+    text-align: center;
+}
+.primary-menu ul{
+    list-style: none;
+    margin: 0;
+}
+.primary-menu ul li {
+    display: inline-block;
+    margin-left: -4px;
+    padding: 13px 10px;
+    padding-bottom: 10px;
+    background: #48dbfb;
+    margin: 5px 0px;
+
+    transition: all ease-in-out .5s;
+}
+.primary-menu ul li a{
+    color: #000;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom-width: 0%;
+
+    transition: all ease-in-out .5s;
+}
+.primary-menu ul li a:hover{
+    color: #48dbfb;
+}
+
+.primary-menu ul li:hover{
+    color: #48dbfb;
+    background-color: #efffff;
+    cursor: pointer;
+}
+
+
+/* Before After Animation On Navigation Menu Link */
+
+.primary-menu ul li a::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #000;
+    
+    transition: width ease-in-out .3s;
+}
+.primary-menu ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+/* --------------- Banner Section CSS Start --------------- */
+.banner{
+    color: #fff;
+    background-color: #48dbfb;
+    padding: 80px 0px;
+    padding-bottom: 90px;
+}
+
+.banner-text{}
+.banner-text h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    color: #fcf2f2;
+}
+.banner-text h1 {
+    font-size: 65px;
+    margin-bottom: 25px;
+    color: #fcf2f2;
+}
+.banner-text .app-btn {
+    background: #fff;
+    display: inline-block;
+    padding: 19px 18px;
+    font-size: 25px;
+    color: #ddd;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 500;
+
+    position: relative;
+    z-index: 1;
+}
+.banner-text .app-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #000;
+
+    transition: all ease-in-out .3s;
+    z-index: -1;
+}
+
+.banner-text .app-btn:hover::before{
+    width: 100%;
+}
+.banner-text .app-btn:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+/* --------------- Image Gallery Section CSS Start --------------- */
+.image-gallery{
+    padding: 60px 0px;
+    background-color: #ffff;
+}
+
+.img-title {
+    padding: 40px 0px;
+    padding-bottom: 60px;
+}
+.img-title h2{
+    font-size: 35px;
+}
+.img-title p{}
+
+.img-gallery{}
+
+.img-gallery .box{
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    width: 300px;
+    height: 225px;
+
+    transition: all ease-in-out .4s;
+}
+
+.img-gallery .box img{
+    /* width: 300px; */
+    display: inline-block;
+    overflow: hidden;
+
+    transition: all ease-in-out .4s;
+}
+
+
+/* Image Galler Hover Animation With CSS Transform Property */
+
+.img-gallery .box:nth-child(1) img:hover{
+    transform: rotate(360deg);
+}
+.img-gallery .box:nth-child(2) img:hover{
+    transform: rotate(40deg) scale(1.4);
+}
+.img-gallery .box:nth-child(3) img:hover{
+    transform: rotate(-40deg) scale(1.3);
+}
+.img-gallery .box:nth-child(4) img:hover{
+    transform: rotate(-40deg) scale(1.3);
+}
+.img-gallery .box:nth-child(5) img:hover{
+    transform: rotate(30deg) scale(1.2);
+}
+.img-gallery .box:nth-child(6) img:hover{
+    transform: rotate(360deg) scale(1.5);
+}
+.img-gallery .box:nth-child(7) img:hover{
+    transform: scale(1.5);
+}
+.img-gallery .box:nth-child(8) img:hover{
+    transform: scale(1.5) rotate(-10deg);
+}
+
+
+/* --------------- Watch a Video Section CSS Start --------------- */
+.watch-a-video {
+    padding: 30px 0px 40px 0px;
+    padding-bottom: 25px;
+    background-color: #fff;
+}
+.watch-video-content{}
+.watch-video-content h1 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+.watch-video-content p {
+    font-size: 14px;
+    color: #918e9c;
+    width: 60%;
+    margin: auto;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.video-step{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.step-box {
+    width: 32%;
+    background: transparent;
+    display: inline-block;
+}
+.step-box a {
+    font-size: 18px;
+    color: #fff;
+    background: #000;
+    font-weight: bolder;
+    padding: 20px 20px;
+    display: inline-block;
+    text-decoration: none;
+
+    transition: all ease-in-out .3s;
+}
+
+.step-box a:hover {
+    background-color: #4adafa;
+    color: #000;
+    font-weight: bolder;
+}
+
+.video-step .box1 {
+    text-align: left;
+}
+.video-step .box2 {
+    text-align: center;
+}
+.video-step .box3 {
+    text-align: right;
+}
+
+
+/* Using TranSform rotate On Step */
+
+.video-step .box1 a {
+    transform: rotate(-45deg);
+}
+.video-step .box3 a {
+    transform: rotate(45deg);
+}
+
+/* Hover  part */
+.video-step .box1 a:hover{
+    transform: rotate(0deg);
+}
+.video-step .box2 a:hover{
+    transform: scale(1.1);
+}
+.video-step .box3 a:hover{
+    transform: rotate(0deg);
+}
+
+
+
+
+/* --------------- Footer & CopyWrite Section CSS Start --------------- */
+.footer-copy {
+    background: #2e2f31;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0px;
+}
+.footer-copy p{
+    font-size: 14px;
+    color:#c7d1cc;
+}
+
+
+
+
+
+/* #################### THANK YOU FOR WATCHING THIS CODE #################### */
